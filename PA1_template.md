@@ -1,4 +1,9 @@
-# Reproducible Research: Peer Assessment 1
+---
+title: "Reproducible Research: Peer Assessment 1"
+output: 
+  html_document:
+    keep_md: true
+---
 
 
 ## Loading and preprocessing the data
@@ -22,7 +27,7 @@ This is the histogram of the total steps per day.
 hist(steps, col="red")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-3-1.png) 
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3-1.png) 
 
 The mean is:
 
@@ -54,7 +59,7 @@ with(steps_interval, plot(interval, x, type="l", col="red",
                           xlab="interval", ylab="average number of steps"))
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-6-1.png) 
+![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6-1.png) 
 
 The interval which contains the max number of steps is:
 
@@ -91,7 +96,7 @@ new_steps <- new_steps$x
 hist(new_steps, col="red")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-10-1.png) 
+![plot of chunk unnamed-chunk-10](figure/unnamed-chunk-10-1.png) 
 
 And, re-calculate the mean:
 
@@ -141,4 +146,4 @@ xyplot(x ~ interval | week_type, data = new_steps_interval, layout=c(1,2), type=
        ylab="Number of steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-14-1.png) 
+![plot of chunk unnamed-chunk-14](figure/unnamed-chunk-14-1.png) 
